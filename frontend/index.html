@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="shortcut icon" href="tasklist.ico" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <button id="theme__toggle__btn">🌙</button>
+    <h1>Task Manager</h1>
+
+    <form id="task__form">
+        <input type="text" id="task__title" placeholder="title" required>
+        <input type="text" id="task__description" placeholder="description" required>
+        <button type="submit" class="btn__add">Add Task</button> 
+    </form>
+
+    <h2>List of Tasks</h2>
+    <ul id="task__list">
+    </ul>
+  </div>
+  
+  <script src="./main.js"></script>
+</body>
+</html>

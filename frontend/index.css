@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+  --color-black: #000;
+  --color-blackAlpha: #000a;
+  --color-white: #fff;
+  --color-gray: #ccc;
+  --color-red: #f00;
+  --color-green: #0f0;
+  --background-color: var(--color-white);
+  --text-color: var(--color-black);
+  --shadow-color: var(--color-blackAlpha);
+}
+
+* {
+  user-select: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+
+}
+
+body.dark__mode {
+  --background-color: var(--color-blackAlpha);
+  --text-color: var(--color-white);
+  --shadow-color: var(--color-white);
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, .btn__add {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--shadow-color);
+  border-radius: 10px;
+}
+
+form input:focus {
+  outline: none;
+  box-shadow: 0 0 10px var(--shadow-color);
+}
+
+input[type="text"] {
+  font-weight: bold;
+}
+
+.btn__add {
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__add:hover {
+  background: var(--background-color);
+  color: var(--text-color);
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+#task__list {
+  list-style: none;
+  padding: 0;
+}
+
+#task__list li {
+  padding: 10px;
+  border: 1px solid var(--text-color);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+#task__list li:hover {
+  box-shadow: 0 0 5px var(--shadow-color);
+}
+
+.delete {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: var(--color-gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.delete:hover {
+  color: var(--color-red);
+  cursor: pointer;
+  scale: 1.5;
+}
+
+#theme__toggle__btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #task__list li {
+    text-align: center;
+    gap: 5px;
+  }
+}
