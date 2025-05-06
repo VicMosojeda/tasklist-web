@@ -1,0 +1,8 @@
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/TaskmanagerApplication.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/config/CorsConfig.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/controller/GlobalExceptionHandler.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/controller/MainController.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/controller/TaskController.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/model/Task.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/repository/TaskRepository.java
+/mnt/c/Users/metadeth/Documents/JAVA/taskmanager/backend/src/main/java/com/metadeth/taskmanager/service/TaskService.java
