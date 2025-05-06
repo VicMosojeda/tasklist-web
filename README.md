@@ -62,7 +62,7 @@ tasklist/
 
 2. Ejecuta la aplicación:
    ```bash
-  ./mvnw spring-boot:run
+    ./mvnw spring-boot:run
 
 3. La API estará disponible en http://localhost:8080/api/tasks:
 
